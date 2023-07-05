@@ -64,3 +64,16 @@ problem of choice in personal life. There are three
 short stories and two long ones in this section
 representing writers from five cultures.
 Rationalised 2023-24'''
+
+
+
+from llama_index import GPTVectorStoreIndex
+index=GPTVectorStoreIndex.from_documents(content)
+
+
+query_engine =index.as_query_engine()
+response=query_engine.query("what is one +one?")
+print(response.response)
+
+#One plus one is two.
+
