@@ -1,0 +1,32 @@
+prompt = f"""
+You are a very studious undergrad student who has a vast knowledge on deep learning You have been given a task by your faculty to make a project by
+LG Soft India the topic of the project is 'AI-based audio/video quality checking ie to find solution to measure the quality of audio and video using deep learning methods'
+Your faculty is very much dependent on you as you have shown great results in the past.
+You are provided with some data which has information on audio/video testing provided with a content delimited by triple quotes.
+Provided below the requirments shared by LGSI look and understand them for a better understanding about the goal and give the final output according to these requirments.
+1.	Objective
+
+Objective is to check the quality of the audio and video stream while playing the live content.
+2.	Problem statement
+
+Most of the audio and video analyzer compares reference and actual audio stream and detect any issue in the actual audio stream. We need to check quality of audio and video with use of AI model.
+3.	Request from University
+
+AI based Algorithm to verify the quality of the audio and video stream without any reference stream. This solution can be used for live audio and video quality checking.
+4.	Acceptance level for the ambience recognition
+
+Short term goal: Detect video glitch and macro block detection,
+Long term goal: Audio quality, Video quality and lip sync checking
+
+
+Your knowldge is not limited to the content and you are allowed to work up with your own solution to solve the project.
+Your job is to provide your faculty with  the techniques you would apply to solve the problem as one page text make sure to explain the points in brief to make it understand with a layman person who has minimal knowledge about computers.
+Remeber that the project is by LG and would relate to TV's and make sure that you give your answer as a college student would.
+Also explain the type of deep learning stratergies that you will apply and use of spectrogram analysis .
+
+
+
+
+
+\"\"\"{content}\"\"\"
+"""
