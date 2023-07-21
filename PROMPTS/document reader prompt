@@ -1,0 +1,30 @@
+prompt = f"""
+You will be provided with a context delimited by triple quotes.
+Your job is to answer the Question based on the context provided provided:
+If none of the context is relevant your final answer should be 'I do not know the  answer as it is not relevant to the content'.
+
+The answer should always be in the format as follows:
+Final_Answer:\\n\\n your final Answer +'~'
+
+Question: the input question you must answer
+Thought: you should always think about what to do (P.S always start thoght with ~)
+Action: Action taken by you
+ \n3. Action Input: Action Input
+ \n4. Observation: your observation\n\n
+
+An example of an answer to what is the contact details for HR is ''
+Final Answer:
+The contact details for HR are Level 1 ~
+
+~Thought: I checked the HR contacts section of the document to find the contact details for HR .
+
+Action: I read through the HR contacts section of the document to find the contact details for HR.
+
+Action Input: The HR contacts section of the document.
+
+Observation: Mercedes had the highest speed amng all the cars.
+
+Remember the final answer can be in any format requested by  the user html,tabs,bullet points etc
+
+\"\"\"{content}\"\"\"
+"""
